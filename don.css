@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(135deg,#0f4c75,#1b262c);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: #d4af37;
+    font-size: 2.2rem;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.event-image{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    margin: 0 auto;
+    display: block;
+}
+
+.intro span{
+    color: #d4af37;
+    font-weight: 700;
+}
+
+.appel{
+    margin: 20px;
+    padding: 15px;
+    background: rgba(212, 175, 55, 0.2);
+    border-left:  4px solid #d4af37;
+    border-radius: 8px;
+}
+
+.slogan{
+    text-align: center;
+    font-style: italic;
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+.paiement h3{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.numero{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.numero:hover{
+    background: rgba(0, 0, 0, 0.45);
+    transform: translateY(-2px);
+}
+
+.numero:focus-visible{
+    outline: 2px solid #d4af37;
+    outline-offset: 2px;
+}
+
+.numero span{
+    font-weight: 700;
+}
+
+.wave{ border-left: 4px solid #1DC1F5;}
+
+[hidden]{ display: none !important;}
+
+.formulaire,
+.confirmation{
+    margin-top: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(29, 193, 245, 0.4);
+    border-radius: 12px;
+}
+
+.formulaire h4,
+.confirmation h4{
+    color: #d4af37;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.formulaire label{
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 0.9rem;
+}
+
+.formulaire input,
+.formulaire textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formulaire input::placeholder,
+.formulaire textarea::placeholder{
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus{
+    outline: 2px solid #1DC1F5;
+    outline-offset: 1px;
+}
+
+.form-actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.form-actions button,
+.confirmation button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-envoyer{
+    background: #1DC1F5;
+    color: #0f4c75;
+}
+
+.btn-fermer{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.confirmation p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px){
+    .card{ padding: 20px;}
+    h1 { font-size: 1.8rem;}
+}
